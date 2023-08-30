@@ -55,4 +55,9 @@ createApp({
       this.activeIndex = index;
     },
   },
+
+  //   cicleImage: {
+  //     setInterval(goNext => {
+  //     }, 3000);
+  //   }
 }).mount("#app");
