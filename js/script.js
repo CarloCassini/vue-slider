@@ -31,6 +31,7 @@ createApp({
         },
       ],
       activeIndex: 0,
+      // clock: setInterval(goNext(), 3000),
     };
   },
 
@@ -54,10 +55,13 @@ createApp({
     goThumb(index) {
       this.activeIndex = index;
     },
+
+    cicleImage() {
+      setInterval(this.goNext, 3000);
+    },
   },
 
-  //   cicleImage: {
-  //     setInterval(goNext => {
-  //     }, 3000);
-  //   }
+  created() {
+    this.cicleImage();
+  },
 }).mount("#app");
