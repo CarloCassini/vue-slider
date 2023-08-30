@@ -50,5 +50,9 @@ createApp({
         this.activeIndex = this.slides.length - 1;
       }
     },
+
+    goThumb(index) {
+      this.activeIndex = index;
+    },
   },
 }).mount("#app");
