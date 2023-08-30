@@ -11,6 +11,7 @@
   <body>
     <div id="app">
       <div class="container">
+        <h1>{{ 'indice attivo = ' + activeIndex}}</h1>
         <div class="slider-wrapper" tabindex="0">
           <div class="item">
             <img :src="slides[activeIndex].image" alt="Spiderman" />
@@ -22,8 +23,8 @@
 
           <div class="thumbs">
             <!-- bottoni per lo scorrimento -->
-            <div class="prev"></div>
-            <div class="next"></div>
+            <div class="prev" @click="goPrev()"></div>
+            <div class="next" @click="goNext()"></div>
 
             <!-- parte delle immagini di thumbnail -->
             <div

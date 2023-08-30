@@ -17,8 +17,4 @@
 
 # svolgimento:
 
-## obj 1:
-
-per rendere il documento come proposto usando Vue devo andare a bodificare i seguenti punti:
-
-- inserisco l'array di oggetti "slides" dentro il campo "data"
+## obj 1: fatto
