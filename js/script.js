@@ -31,6 +31,7 @@ createApp({
         },
       ],
       activeIndex: 0,
+      interval: true,
       // clock: setInterval(goNext(), 3000),
     };
   },
@@ -57,7 +58,11 @@ createApp({
     },
 
     cicleImage() {
-      setInterval(this.goNext, 3000);
+      this.interval = setInterval(this.goNext, 3000);
+    },
+
+    stopSlides() {
+      clearInterval(this.interval);
     },
   },
 
